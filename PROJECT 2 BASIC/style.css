@@ -1,0 +1,119 @@
+/* UNIVERSAL SELECTOR  */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#Wrapper {
+    height: 100vh;
+
+    /* X DIRN SCROLL CLOSED  */
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    /* Z=0 OR APPKI AKHO KA BEECH KA PLANE PERSPECTIVE HOTHA HY  */
+
+    perspective: 10px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    /* FOR OVERLAPPING KON NEECHA KON UPAR  */
+    z-index: -1;
+}
+
+.Background {
+    transform: translateZ(-40px) scale(6);
+    width: fit-content;
+}
+
+.Foreground {
+
+    transform: translateZ(-20px) scale(4);
+}
+
+.Background,
+.Foreground {
+    position: absolute;
+    height: 100%;
+
+
+    /* TO BRING ADVENTURE TEXT ABOVE  */
+    z-index: -1;
+    /* TO FIT IMAGE INSIDE A CONTINER  */
+    object-fit: cover;
+}
+
+h1 {
+    position: absolute;
+    font-size: 80px;
+    top: 5rem;
+    letter-spacing: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    text-decoration: dotted;
+    text-shadow: 1px 1px yellow;
+}
+
+section {
+    background-color:rgb(24, 22, 22);
+    /* background-image: linear-gradient(yellow,black) */
+    color: white;
+    padding: 5px;
+}
+
+.first {
+    font-size: 4rem;
+    padding: 0 8rem;
+
+}
+
+.first1 {
+    position: absolute;
+    background-color: rgb(255, 251, 251);
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    right: 50%;
+    align-content: center;
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px rgb(245, 245, 2);
+}
+
+.Text {
+    font-size: 1.4rem;
+    padding: 0 8rem;
+    margin: 4rem 0;
+
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 500px;
+    background-position: left;
+    background-size: cover;
+}
+
+.bg1 {
+    background-image: url(biking.jpg);
+}
+
+.bg2 {
+    background-image: url(para.jpg);
+}
+
+.bg3 {
+    background-image: url(water.jpg);
+}
